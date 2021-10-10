@@ -1,0 +1,19 @@
+<h3>New contact</h3>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name"> Name </label>
+    <input id="name" type="text" formControlName="name" />
+  </div>
+
+  <br />
+
+  <div>
+    <label for="phoneNumber"> Phone number </label>
+    <input id="phoneNumber" type="text" formControlName="phoneNumber" />
+  </div>
+
+  <br />
+
+  <button class="button" type="submit">Add</button>
+</form>
